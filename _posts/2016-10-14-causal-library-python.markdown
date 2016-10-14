@@ -13,7 +13,7 @@ author: tanmayee
 externalLink: false
 ---
 
-In the ninth semester, we are required to work on a 12 credit project. My project is on building a python library for causal inference. I'm working on this with Chandan Yeshwanth.
+In the ninth semester, we are required to work on a 12 credit project. My project is on building a python library for causal inference. I'm working on this with [Chandan Yeshwanth](mailto:Chandan.Yeshwanth@iiitb.org).
 
 Our first task was to find more about existing libraries. Here is a list of libraries that we found:
 
