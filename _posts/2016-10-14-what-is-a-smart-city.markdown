@@ -6,7 +6,7 @@ headerImage: false
 tag: smart cities
 blog: true
 author: tanmayee
-hidden: false
+hidden: true
 description: Semantics of a Smart city
 externalLink: false
 jemoji: '<img class="emoji" title=":ramen:" alt=":ramen:" src="https://assets.github.com/images/icons/emoji/unicode/1f378.png" height="20" width="20" align="absmiddle">'
