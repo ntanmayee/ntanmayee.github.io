@@ -2,15 +2,14 @@
 title: "What is a 'Smart City' anyway?"
 layout: post
 date: 2016-10-14 12:20
-image: /assets/images/markdown.jpg
 headerImage: false
-tag:
-- markdown
-- components
-- extra
+tag: smart cities
 blog: true
 author: tanmayee
+hidden: false
 description: Semantics of a Smart city
+externalLink: false
+jemoji: '<img class="emoji" title=":ramen:" alt=":ramen:" src="https://assets.github.com/images/icons/emoji/unicode/1f378.png" height="20" width="20" align="absmiddle">'
 ---
 In September 2015, CSTEP released a compendium of resources on Smart Cities. In their own words, "The purpose of this Compendium is to provide policy makers, academicians, industry and all other stakeholders interested in ‘Smart Cities’ a collection of different types of resources pertaining to smart cities." The compendium may be found [here](http://www.cstep.in/uploads/default/files/publications/stuff/320f73a9fd318538a3d258e8dfe180e4.pdf).
 
