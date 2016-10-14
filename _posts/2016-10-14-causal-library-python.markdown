@@ -17,13 +17,16 @@ In the ninth semester, we are required to work on a 12 credit project. My projec
 
 Our first task was to find more about existing libraries. Here is a list of libraries that we found:
 1. [pcalg](https://cran.r-project.org/web/packages/pcalg/index.html): This R package supports both structure learning and inference. For structure learning, PC, FCI, RFCI and GIES algorithms are implemented. For causal inference, the IDA algorithm, the Generalized Backdoor Criterion (GBC) and the Generalized Adjustment Criterion (GAC) have been implemented. 
+
 2. [CausalInference](http://causalinferenceinpython.org/): This python library sopports
     * Assessment of overlap in covariate distributions
     * Estimation of propensity score
     * Improvement of covariate balance through trimming
     * Subclassification on propensity score
     * Estimation of treatment effects via matching, blocking, weighting, and least squares
+
 3. [CausalImpact](http://google.github.io/CausalImpact/CausalImpact.html): This R package estimates the causal effect of a designed intervention on a time series.
+
 4. [SuperLearner](https://cran.r-project.org/web/packages/SuperLearner/index.html) and [tmle](https://cran.r-project.org/web/packages/tmle/index.html): These are R packages that implement targeted maximum likelihood estimation (TMLE). 
 
 The main challenge in conducting any survey in the area of causal inference, is that there is a wide variation in the terminology and language used, depending on the author's background. For example, my introduction was through Judea Pearl's book **Causality**, where the it was all about Markov models and DAGs and graphs. However, other books on causal inference talk about the Granger causality test, propensity scores and treatment effects. 
