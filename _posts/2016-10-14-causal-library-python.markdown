@@ -1,7 +1,7 @@
 ---
 title: "Causal Library in Python: Part 1"
 layout: post
-date: 2016-06-23 22:10
+date: 2016-9-23 22:10
 tag: causal, library
 image: /assets/images/jekyll-logo-light-solid.png
 headerImage: false
