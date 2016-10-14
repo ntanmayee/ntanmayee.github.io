@@ -15,4 +15,7 @@ In September 2015, CSTEP released a compendium of resources on Smart Cities. In 
 
 For the class on Smart Cities, we were required to find the similarities and differences between these definitions by different stakeholders. For each definition, the report provides a list of corresponding key-words. I counted the frequency of these key words and made a word cloud. 
 
+![Markdowm Image][/assets/image/wordcloud_academic_clean.png]
+<figcaption class="caption">Wordcloud of words used in definitions of smart cities</figcaption>
+
 The code and other images can be found [here.](https://github.com/triptoes1/smart-cities-compendium)
