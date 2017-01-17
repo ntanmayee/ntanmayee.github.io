@@ -15,9 +15,9 @@ externalLink: false
 
 In this article, I will describe how to find the maximum likelihood estimates for parameters of a Bayesian Network. Intutively, a Bayesian Network provides a way to capture dependecies between different variables that we are interested in.
 
-Consider some dataset $D$ which contains a set of variables \\(V=\{V_1,..,V_n\}\\). Here, we assume that the variables are categorical - basically, it means that the set of possible values that the variable can take is finite. The joint probability distribution describes the way the values of the dataset is spread out. Storing the joint probability distribution explicitely is costly, but Bayesian Networks provide an efficient alternative. 
+Consider some dataset \\( D \\) which contains a set of variables \\( V=\{V_1,..,V_n\} \\). Here, we assume that the variables are categorical - basically, it means that the set of possible values that the variable can take is finite. The joint probability distribution describes the way the values of the dataset is spread out. Storing the joint probability distribution explicitely is costly, but Bayesian Networks provide an efficient alternative. 
 
-In a Bayesian Network, the joint distribution can be factored into a set of terms as follows $$Pr(V) = \prod_{i=1}^nPr(V_i\mid \pi_i)$$ where $\pi_i$ is a subset of $V$ called the parents of $V_i$. If we draw a graph such that there is an edge to $V_i$ from all variables in $\pi_i$, we obtain the graph assciated with the Bayesian Network. We make the additional assumption that this graph is a DAG. 
+In a Bayesian Network, the joint distribution can be factored into a set of terms as follows $$Pr(V) = \prod_{i=1}^nPr(V_i\mid \pi_i)$$ where \\( \pi_i \\) is a subset of \\( V \\) called the parents of $V_i$. If we draw a graph such that there is an edge to $V_i$ from all variables in $\pi_i$, we obtain the graph assciated with the Bayesian Network. We make the additional assumption that this graph is a DAG. 
 
 Let us take an example. Consider the DAG below. ![Toy Dag](https://raw.githubusercontent.com/triptoes1/triptoes1.github.io/master/assets/images/toy_dag1.png "Toy Dag") The joint probability distribution can be factored as follows $$Pr(A,B,C,D,E,F)=Pr(A).Pr(B).Pr(C \mid A,B).Pr(D \mid C).Pr(E \mid C).Pr(F \mid E)$$ 
 
