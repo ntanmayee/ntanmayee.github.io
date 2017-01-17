@@ -42,7 +42,7 @@ This article mainly deals with the estimation of parameters for the Bayesian Net
 The method to find the maximum likelihood estimate for the parameters of the network is so simple, that it almost seems trivial. Consider the DAG given above. Suppose we want to find the conditional distribution $Pr(C \mid A,B)$. $C$ takes a value from $\{x,y\}$, $A$ takes a value from $\{1,2\}$ and $B$ is always $3$. We will need to construct the following table from our dataset -
 
 | C | A | B | # of rows in $D$ |
-|:-:|---|---|------------------|
+|:-:|:---:|:---:|:------------------:|
 | x | 1 | 3 |                  -|
 | x | 2 | 3 |                  -|
 | y | 1 | 3 |                  -|
