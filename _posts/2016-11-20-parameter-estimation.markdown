@@ -16,11 +16,22 @@ use_math: true
 
 In this article, I will describe how to find the maximum likelihood estimates for parameters of a Bayesian Network. Intutively, a Bayesian Network provides a way to capture dependecies between different variables that we are interested in.
 
-Consider some dataset $D$ which contains a set of variables $V=V_1,..,V_n$. Here, we assume that the variables are categorical - basically, it means that the set of possible values that the variable can take is finite. The joint probability distribution describes the way the values of the dataset is spread out. Storing the joint probability distribution explicitely is costly, but Bayesian Networks provide an efficient alternative. 
+Consider some dataset $D$ which contains a set of variables $V=\{V_1,..,V_n\}$. Here, we assume that the variables are categorical - basically, it means that the set of possible values that the variable can take is finite. The joint probability distribution describes the way the values of the dataset is spread out. Storing the joint probability distribution explicitely is costly, but Bayesian Networks provide an efficient alternative. 
 
-In a Bayesian Network, the joint distribution can be factored into a set of terms as follows $$Pr(V) = \prod_{i=1}^nPr(V_i\mid \pi_i)$$ where $\pi_i$ is a subset of $V$ called the parents of $V_i$. If we draw a graph such that there is an edge to $V_i$ from all variables in $\pi_i$, we obtain the graph assciated with the Bayesian Network. We make the additional assumption that this graph is a DAG. 
+In a Bayesian Network, the joint distribution can be factored into a set of terms as follows 
+$$
+  Pr(V) = \prod_{i=1}^nPr(V_i\mid \pi_i)
+$$ 
+where $\pi_i$ is a subset of $V$ called the parents of $V_i$. If we draw a graph such that there is an edge to $V_i$ from all variables in $\pi_i$, we obtain the graph assciated with the Bayesian Network. We make the additional assumption that this graph is a DAG. 
 
-Let us take an example. Consider the DAG below. ![Toy Dag](https://raw.githubusercontent.com/triptoes1/triptoes1.github.io/master/assets/images/toy_dag1.png "Toy Dag") The joint probability distribution can be factored as follows $$Pr(A,B,C,D,E,F)=Pr(A).Pr(B).Pr(C \mid A,B).Pr(D \mid C).Pr(E \mid C).Pr(F \mid E)$$ 
+Let us take an example. Consider the DAG below. 
+
+![Toy Dag](https://raw.githubusercontent.com/triptoes1/triptoes1.github.io/master/assets/images/toy_dag1.png "Toy Dag") 
+
+The joint probability distribution can be factored as follows 
+$$
+Pr(A,B,C,D,E,F)=Pr(A).Pr(B).Pr(C \mid A,B).Pr(D \mid C).Pr(E \mid C).Pr(F \mid E)
+$$ 
 
 An important independence assumption in Bayesian Networks is that every node in the DAG is independent of its non-descendants, given its parents. In the previous example, given $C$, $E$ is independent of $A$ and $B$.
 
@@ -35,7 +46,11 @@ The method to find the maximum likelihood estimate for the parameters of the net
 | y | 1 | 3 |                  -|
 | y | 2 | 3 |                  -|
 
-For every value that $C$ takes and for every possible combination of values for $\pi_i$ (the parents of $C$), we need to find how many times this combination occurs in the dataset. Basically, for every possible combination of values for $V_i$ and $\pi_i$ we want to count the number of rows in the dataset that contain this combination. More formally, the maximum likelihood estimate is given by $$\theta_{ijk} = \frac {n_{ijk}} {n_{ij}}$$ where ${n_{ijk}}$ is the number of times that variable $i$ takes the value $j$ with its parents having the $k^{th}$ configuration, and $n_{ij}$ is the number of times that variable $i$ takes the value $j$ in the dataset. 
+For every value that $C$ takes and for every possible combination of values for $\pi_i$ (the parents of $C$), we need to find how many times this combination occurs in the dataset. Basically, for every possible combination of values for $V_i$ and $\pi_i$ we want to count the number of rows in the dataset that contain this combination. More formally, the maximum likelihood estimate is given by
+$$
+\theta_{ijk} = \frac {n_{ijk}} {n_{ij}}
+$$ 
+where ${n_{ijk}}$ is the number of times that variable $i$ takes the value $j$ with its parents having the $k^{th}$ configuration, and $n_{ij}$ is the number of times that variable $i$ takes the value $j$ in the dataset. 
 
 If you notice, we haven't included $n_{ij}$ in the table that we created. This is because $n_{ijk}$ constitutes the sufficient statistics for the distribution (or, the distribution is completely described by the quantity $n_{ijk}$). 
 
