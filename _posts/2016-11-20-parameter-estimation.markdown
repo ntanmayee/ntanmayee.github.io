@@ -16,7 +16,7 @@ use_math: true
 
 In this article, I will describe how to find the maximum likelihood estimates for parameters of a Bayesian Network. Intutively, a Bayesian Network provides a way to capture dependecies between different variables that we are interested in.
 
-Consider some dataset $D$ which contains a set of variables $V=\{V_1,..,V_n\}$. Here, we assume that the variables are categorical - basically, it means that the set of possible values that the variable can take is finite. The joint probability distribution describes the way the values of the dataset is spread out. Storing the joint probability distribution explicitely is costly, but Bayesian Networks provide an efficient alternative. 
+Consider some dataset $D$ which contains a set of variables $V=\\{V_1,..,V_n\\}$. Here, we assume that the variables are categorical - basically, it means that the set of possible values that the variable can take is finite. The joint probability distribution describes the way the values of the dataset is spread out. Storing the joint probability distribution explicitely is costly, but Bayesian Networks provide an efficient alternative. 
 
 In a Bayesian Network, the joint distribution can be factored into a set of terms as follows 
 
