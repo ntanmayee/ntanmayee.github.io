@@ -38,9 +38,6 @@ Was part of an inter-disciplinary team that developed a serious game on solid wa
 #### International Institute of Information Technology - Bangalore
 Computer Science major with CGPA of 3.82/4.0
 
-#### Bethany Junior College
-Indian School Certificate (ISC) with 94%.
-
 ## Skills
 * **Programming Languages**: Python, Java, C, C++, SQL, OCaml, PHP, Bash Script
 * **Software Packages**: MATLAB, Android Studio, SimpleScalar, Latex, Gephi, Netlogo, Player-Stage, Arduino

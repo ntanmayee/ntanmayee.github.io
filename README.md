@@ -5,6 +5,5 @@
 <p align="center">This is a simple and minimalist template for Jekyll.</p>
 
 ***
----
 
 [MIT](http://kopplin.mit-license.org/) License © Sérgio Kopplin
