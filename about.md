@@ -7,11 +7,12 @@ layout: page
 # About Me
 Hi there! I'm Tanmayee Narendra, a Computer Science major, Masters student at IIIT Bangalore. I am currently working on my Masters thesis in the area of Machine Learning. Previously, I have been a Visiting Student in MIT Media Lab under the supervision of Sandy Pentland. I have also worked with Fields of View and Medialab Amsterdam in developing a serious game on solid waste management in Bangalore. 
 
-My friends and I won the AppLift Datathon that was held on 29-30th November, 2015. 
-
 In my free time, I enjoy singing. You can watch some of my covers [here.](https://www.youtube.com/watch?v=A1n0NKEndfs&list=PLqcR77bpV0rQlXiWEpXeDXIgAzivEEm11)
 
+My CV can be found [here.](/docs/CV_Tanmayee Narendra_181116.pdf)
+
 ## Achievements
+* Recepient of Grace Hopper Celebrations India Student Scholarship, 2016
 * Winner of AppLift’s Datathon held on 29-30 th November, 2015. [Read about it here.](http://blog.venturesity.com/rise-rise-female-hacker)
 * First Runner Up in Swiss-Re BlueMix Hackathon. 
 * Awarded the Dean’s Merit List certificate for 6 semesters in IIIT Bangalore.
