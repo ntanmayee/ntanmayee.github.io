@@ -1,9 +1,9 @@
 # main text of home
 name: Tanmayee Narendra
-bio: Computer Science Masters student at IIIT Bangalore
+bio: Software Engineer at IBM Research, India
 
 # twitter summary info
-description: Hi there! I'm a CS graduate student in IIIT-B
+description: Hi there! I'm a Software Engineer at IBM Research, India.
 
 # if it's an external image, update below for true
 # better with square images
@@ -30,7 +30,7 @@ highlighter: rouge
 disqus: false
 # if you don't have any of social below, comment the line
 #facebook: myfacebook
-twitter: ntanmayee
+twitter: tanmayee_n
 # google: mygoogle
 # instagram: myinstagram
 # pinterest: mypinterest
@@ -40,9 +40,16 @@ youtube: triptoes1
 github: triptoes1
 # medium: medium
 # vimeo: myvimeo
-email: tanmayee.narendra@iiitb.org
+email: example@email.com
 
 authors:
+    tanmayee:
+        name: Tanmayee Narendra
+        bio: Eveything boils down to Causality!
+        external-image: false
+        picture: assets/images/profile.jpg
+        twitter: tanmayee_n
+
     johndoe:
         name: John Doe
         bio: A Man who travels the world eating noodles
@@ -62,8 +69,8 @@ authors:
 width: normal
 
 # if you don't need pagination, comment the *paginate* configs below
-# paginate: 5
-# paginate_path: "blog/:num/"
+paginate: 10
+paginate_path: "blog/:num/"
 
 # if you don't need projects, comment the *projects* configs below
 projects: true

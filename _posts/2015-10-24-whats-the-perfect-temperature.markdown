@@ -4,10 +4,10 @@ layout: post
 date: 2015-10-24 22:48
 image: /assets/images/markdown.jpg
 headerImage: false
-tag:
-- markdown
-- components
-- extra
+tag: 
+- air temperature
+- politics
+- gender
 blog: true
 author: tanmayee
 description: Indoor Air Temperature Control in Office Spaces
