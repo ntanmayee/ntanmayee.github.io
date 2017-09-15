@@ -28,7 +28,7 @@ Distributional similarity is an important hypothesis in linguistics, and the mai
 For example, let's take the word *top*, and two sentences - 
 
 * This purple top will go well with my white skirt. 
-* We took 2 hours to reach the top of the hill.
+* We took two hours to reach the top of the hill.
 
 Even though the same word *top* was used in both sentences, they convey different meanings because of the other words that surrounded them. 
 
@@ -43,7 +43,7 @@ For example, if we had a vocabulary {aardvark, apple, ..., zebra}, the localist 
 
 The size of these vectors scales linearly with vocabulary size $V$. Also, there is no in-built notion of similarity between them. 
 
-Distributed representations are the opposite of localist representations. They are dense vectors, which are typically much smaller than the vocabulary size, and are designed in such a way that they capture similarity between related words. Word2vec and GloVe are distributed representations for large vocabulary sizes.
+Distributed representations are the opposite of localist representations. They are dense vectors, which are typically much smaller than the vocabulary size, and are designed in such a way that they capture similarity between related words. [Word2vec](https://code.google.com/archive/p/word2vec/) and [GloVe](https://nlp.stanford.edu/projects/glove/) are distributed representations for large vocabulary sizes.
 
 
 ### References
