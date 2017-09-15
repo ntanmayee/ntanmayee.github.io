@@ -2,11 +2,20 @@
 title: "Estimating Parameters in a Bayesian Network"
 layout: post
 date: 2016-9-23 22:10
-tag: bayesian, library
+tag: 
+- bayesian 
+- library
+- software
+- R
+- python
+- parameters
+- MLE
+- maximum likelihood estimate
+- parameter estimation
 image: /assets/images/jekyll-logo-light-solid.png
 headerImage: false
-projects: true
-hidden: true # don't count this post in blog pagination
+blog: true
+<!-- hidden: true # don't count this post in blog pagination -->
 description: "How do you find the maximum likelihood estimate parameters for a Bayesian Network."
 jemoji: '<img class="emoji" title=":ramen:" alt=":ramen:" src="https://assets.github.com/images/icons/emoji/unicode/1f378.png" height="20" width="20" align="absmiddle">'
 author: tanmayee

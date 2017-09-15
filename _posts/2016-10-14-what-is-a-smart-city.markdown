@@ -3,10 +3,13 @@ title: "What is a 'Smart City' anyway?"
 layout: post
 date: 2016-10-14 12:20
 headerImage: false
-tag: smart cities
+tag: 
+- smart cities
+- wordcloud
+- visualization
 blog: true
 author: tanmayee
-hidden: true
+<!-- hidden: true -->
 description: Semantics of a Smart city
 externalLink: false
 jemoji: '<img class="emoji" title=":ramen:" alt=":ramen:" src="https://assets.github.com/images/icons/emoji/unicode/1f378.png" height="20" width="20" align="absmiddle">'

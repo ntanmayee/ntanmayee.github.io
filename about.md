@@ -9,7 +9,7 @@ Hello! I'm Tanmayee Narendra, a Software Engineer at IBM Research, Bangalore, In
 
 My Masters thesis is on "Causal Discovery for Closed Systems: The Example of Aircraft Engines". Previously, I have been a Visiting Student in MIT Media Lab under the supervision of Sandy Pentland. I have also worked with Fields of View and Medialab Amsterdam in developing a serious game on solid waste management in Bangalore. 
 
-In my free time, I enjoy singing. You can watch some of my covers [here.](https://www.youtube.com/watch?v=A1n0NKEndfs&list=PLqcR77bpV0rQlXiWEpXeDXIgAzivEEm11)
+In my free time, I enjoy singing. I have some covers on [YouTube](https://www.youtube.com/watch?v=A1n0NKEndfs&list=PLqcR77bpV0rQlXiWEpXeDXIgAzivEEm11) and recordings on [Smule.](https://www.smule.com/triptoes)
 
 My CV can be found [here.](/docs/CV_Tanmayee Narendra_181116.pdf)
 

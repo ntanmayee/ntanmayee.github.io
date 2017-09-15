@@ -2,11 +2,17 @@
 title: "Algorithms for Causal Discovery"
 layout: post
 date: 2017-2-7 11:30
-tag: bayesian
+tag: 
+- bayesian
+- causal 
+- causality
+- discovery
+- algorithms
+- DAG
 image: /assets/images/jekyll-logo-light-solid.png
 headerImage: false
-projects: true
-hidden: true # don't count this post in blog pagination
+blog: true
+<!-- hidden: true # don't count this post in blog pagination -->
 description: "List of available algorithms for causal discovery"
 jemoji: '<img class="emoji" title=":ramen:" alt=":ramen:" src="https://assets.github.com/images/icons/emoji/unicode/1f378.png" height="20" width="20" align="absmiddle">'
 author: tanmayee

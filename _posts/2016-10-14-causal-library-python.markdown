@@ -2,11 +2,17 @@
 title: "Causal Library in Python: Part 1"
 layout: post
 date: 2016-9-23 22:10
-tag: causal, library
+tag: 
+- causal 
+- library
+- software
+- python
+- R
+- causality
 image: /assets/images/jekyll-logo-light-solid.png
 headerImage: false
-projects: true
-hidden: true # don't count this post in blog pagination
+blog: true
+<!-- hidden: true # don't count this post in blog pagination -->
 description: "Our attempt to create a python library for causal inference."
 jemoji: '<img class="emoji" title=":ramen:" alt=":ramen:" src="https://assets.github.com/images/icons/emoji/unicode/1f378.png" height="20" width="20" align="absmiddle">'
 author: tanmayee
