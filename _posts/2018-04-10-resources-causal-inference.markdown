@@ -42,3 +42,5 @@ delivered November 1996. [[pdf]](http://bayes.cs.ucla.edu/BOOK-2K/causality2-epi
 * Mini Lecture Series on Causality by Prof Jonas Peters at Broad Institute [[link]](https://youtu.be/zvrcyqcN9Wo)
 * *Causes and Counterfactuals: Concepts, Principles and Tools* in Tutorial in NIPS 2013 [[link]](https://youtu.be/yksduYxEusQ)
 * *Towards Causal Machine Learning* by Bernhard Schölkopf [[link]](https://www.youtube.com/watch?v=ooeRlw3U2zU&t=1s)
+
+Please let me know if I have missed any other resources!
