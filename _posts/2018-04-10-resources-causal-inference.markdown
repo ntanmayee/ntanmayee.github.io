@@ -23,24 +23,28 @@ Here is a list of resources to get started on Causality, Causal Inference and Co
 Reasoning. 
 
 ## Reading
-* Prof Cosma Shalizi's lecture notes for the course on Advanced Data Analysis
+* If you have an hour to spare, read *The Art and Science of Cause and Effect* by Judea Pearl. 
+This is the transcript of a public lecture by Judea Pearl 
+delivered November 1996, and it brilliantly motivates why we need
+causality, and gives an overview of what the theory 
+allows us to do.  [[pdf]](http://bayes.cs.ucla.edu/BOOK-2K/causality2-epilogue.pdf)
+
+* If you have 8-10 hours to spare, and want to get into some level of detail, read Cosma Shalizi's lecture notes for the course on Advanced Data Analysis
     - Graphical Causal Models [[pdf]](http://www.stat.cmu.edu/~cshalizi/uADA/12/lectures/ch22.pdf)
     - Identifying Causal Effects from Observations [[pdf]](http://www.stat.cmu.edu/~cshalizi/uADA/12/lectures/ch23.pdf)
     - Estimating Causal Effects from Observations [[pdf]](http://www.stat.cmu.edu/~cshalizi/uADA/12/lectures/ch24.pdf)
     - Discovering Causal Structure from Observations [[pdf]](http://www.stat.cmu.edu/~cshalizi/uADA/12/lectures/ch25.pdf)
 
-* Elements of Causal Inference* by Jonas Peters, Dominik Janzing, Bernhard Schölkopf (Jonas Peters, Dominik Janzing, Bernhard Schölkopf)
+* If you want to understand Causality in depth, read *Elements of Causal Inference* by Jonas Peters, Dominik Janzing, Bernhard Schölkopf.
 Free PDF available [[here].](https://mitpress.mit.edu/books/elements-causal-inference)
 
-* *The Art and Science of Cause and Effect* by Judea Pearl. 
-This is the transcript of a public lecture by Judea Pearl 
-delivered November 1996. [[pdf]](http://bayes.cs.ucla.edu/BOOK-2K/causality2-epilogue.pdf)
-
-* Pearl, Judea. Causality. Cambridge university press, 2009. [[amazon]](https://www.amazon.in/Causality-Judea-Pearl/dp/052189560X)
+* If you have a lot of time to spare, then read Judea Pearl's classic book 
+*Causality* [[amazon]](https://www.amazon.in/Causality-Judea-Pearl/dp/052189560X)
 
 ## Watching
 * Mini Lecture Series on Causality by Prof Jonas Peters at Broad Institute [[link]](https://youtu.be/zvrcyqcN9Wo)
-* *Causes and Counterfactuals: Concepts, Principles and Tools* in Tutorial in NIPS 2013 [[link]](https://youtu.be/yksduYxEusQ)
+* *Causes and Counterfactuals: Concepts, Principles and Tools* in Tutorial in NIPS 2013 
+by Judea Pearl and Elias Bareinboim. [[link]](https://youtu.be/yksduYxEusQ)
 * *Towards Causal Machine Learning* by Bernhard Schölkopf [[link]](https://www.youtube.com/watch?v=ooeRlw3U2zU&t=1s)
 
 Please let me know if I have missed any other resources!
