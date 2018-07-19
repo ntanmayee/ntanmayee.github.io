@@ -23,6 +23,9 @@ Here is a list of resources to get started on Causality, Causal Inference and Co
 Reasoning. 
 
 ## Reading
+* If you have 10 minutes, read this blog post - it's very easy to read, it's recent (as of 18th July, 2018), and gives an overall perspective of why causal inference might be a good framework to try - [[blog]](https://www.inference.vc/untitled/)
+
+
 * If you have an hour to spare, read *The Art and Science of Cause and Effect* by Judea Pearl. 
 This is the transcript of a public lecture by Judea Pearl 
 delivered November 1996, and it brilliantly motivates why we need
@@ -42,9 +45,18 @@ Free PDF available [[here].](https://mitpress.mit.edu/books/elements-causal-infe
 *Causality* [[amazon]](https://www.amazon.in/Causality-Judea-Pearl/dp/052189560X)
 
 ## Watching
-* Mini Lecture Series on Causality by Prof Jonas Peters at Broad Institute [[link]](https://youtu.be/zvrcyqcN9Wo)
+
+I've divided the videos into two categories - lectures and talks. Typically, lectures are a detailed series of videos. Talks are shorter, concise and sometimes also explain some exciting research areas and results.
+
+### Lectures
+* Mini Lecture Series on Causality by Jonas Peters at Broad Institute [[link]](https://youtu.be/zvrcyqcN9Wo)
+
+### Talks
 * *Causes and Counterfactuals: Concepts, Principles and Tools* in Tutorial in NIPS 2013 
 by Judea Pearl and Elias Bareinboim. [[link]](https://youtu.be/yksduYxEusQ)
 * *Towards Causal Machine Learning* by Bernhard Schölkopf [[link]](https://www.youtube.com/watch?v=ooeRlw3U2zU&t=1s)
+* *Learning Causal Mechanisms* in ICLR 2018 by Bernhard Schölkopf [[link]](https://youtu.be/4qc28RA7HLQ)
 
 Please let me know if I have missed any other resources!
+
+(Updated 19th July, 2018)
