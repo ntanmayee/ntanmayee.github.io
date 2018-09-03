@@ -57,6 +57,9 @@ by Judea Pearl and Elias Bareinboim. [[link]](https://youtu.be/yksduYxEusQ)
 * *Towards Causal Machine Learning* by Bernhard Schölkopf [[link]](https://www.youtube.com/watch?v=ooeRlw3U2zU&t=1s)
 * *Learning Causal Mechanisms* in ICLR 2018 by Bernhard Schölkopf [[link]](https://youtu.be/4qc28RA7HLQ)
 
+## More Resources
+* A nice introduction to the different schools of thought in causal analysis. [arxiv](https://arxiv.org/abs/1806.01488v1)
+
 Please let me know if I have missed any other resources!
 
-(Updated 19th July, 2018)
+(Updated 3rd September, 2018)
