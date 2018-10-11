@@ -7,16 +7,14 @@ layout: page
 # About Me
 Hello! I'm Tanmayee Narendra, a Software Engineer at IBM Research, Bangalore, India. I am interested in Machine Learning and AI, particularly causal inference and natural language processing.
 
-My Masters thesis is on "Causal Discovery for Closed Systems: The Example of Aircraft Engines". Previously, I have been a Visiting Student in MIT Media Lab under the supervision of Sandy Pentland. I have also worked with Fields of View and Medialab Amsterdam in developing a serious game on solid waste management in Bangalore. 
+My Masters thesis is on "Causal Discovery for Closed Systems: The Example of Aircraft Engines". Previously, I have been a Visiting Student in MIT Media Lab under the supervision of Sandy Pentland. I have also worked with Fields of View and Medialab Amsterdam in developing a serious game on solid waste management in Bangalore.
 
 In my free time, I enjoy singing. I have some covers on [YouTube](https://www.youtube.com/watch?v=A1n0NKEndfs&list=PLqcR77bpV0rQlXiWEpXeDXIgAzivEEm11) and recordings on [Smule.](https://www.smule.com/triptoes)
-
-My CV can be found [here.](/docs/CV_Tanmayee Narendra_181116.pdf)
 
 <!-- ## Achievements
 * Recepient of Grace Hopper Celebrations India Student Scholarship, 2016
 * Winner of AppLift’s Datathon held on 29-30 th November, 2015. [Read about it here.](http://blog.venturesity.com/rise-rise-female-hacker)
-* First Runner Up in Swiss-Re BlueMix Hackathon. 
+* First Runner Up in Swiss-Re BlueMix Hackathon.
 * Awarded the Dean’s Merit List certificate for 10 semesters in IIIT Bangalore.
 * Qualified for regionals of ACM ICPC (Amritapuri Region) in 2015 and 2013
 * Stood 3rd in India in IEEE Xtreme 8.0 (24 hour programming competition) in 2014
@@ -27,7 +25,7 @@ My CV can be found [here.](/docs/CV_Tanmayee Narendra_181116.pdf)
 
 ##### May 2015 - August 2015
 
-Worked on the Andorra Living Lab project in the **Human Dynamics** group, under the supervision of Sandy Pentland. 
+Worked on the Andorra Living Lab project in the **Human Dynamics** group, under the supervision of Sandy Pentland.
 
 #### Research & Development Intern
 
