@@ -31,13 +31,13 @@ This is Darwin's evolutionary process at work, and it's slow. Most machine learn
 
 On the other hand, humans were able to invent telescopes and microscopes in a few thousands of years, which rival or surpass the best vision systems found in nature.
 
-**How did this super-evolutionary process happen?**
-
-Pearl argues that this was possible because humans have a "blueprint of the environment", a mental model of how things work, and this helps in imagining alternate universes and hypothetical situations that have not actually happened.
-
 ![Telescope](https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/12.6%22_Fitz_telescope_in_Ann_Arbor.jpg/512px-12.6%22_Fitz_telescope_in_Ann_Arbor.jpg)
 <figcaption class="caption">The Fitz Telescope at Ann Arbor (Wikimedia Commmons)</figcaption>
 <br>
+
+**How did this super-evolutionary process happen?**
+
+Pearl argues that this was possible because humans have a "blueprint of the environment", a mental model of how things work, and this helps in imagining alternate universes and hypothetical situations that have not actually happened.
 
 How might we build a system that can answer retrospective, hypothetical "what-if" questions? According to Pearl, just data is not enough, and model-driven reasoning is necessary for strong AI.
 
