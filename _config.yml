@@ -27,7 +27,7 @@ analytics-google: 'UA-127309835-1'
 
 # if you don't want comments in your posts, set to false
 # disqus: mydisqus
-disqus: false
+disqus: triptoes1
 # if you don't have any of social below, comment the line
 #facebook: myfacebook
 twitter: tanmayee_n
