@@ -28,7 +28,8 @@ Here is a list of libraries, packages and tools for causal discovery and inferen
 
 ### Discovery
 
-1. **CGNN**: This is not exactly a package, but its code to reproduce the results from the [paper](https://arxiv.org/abs/1709.05321) "Learning Functional Causal Models with Generative Neural Networks" [[GitHub](https://github.com/GoudetOlivier/CGNN)]
+1. **CausalDiscoveryToolbox**: This is a package for causal discovery, and includes algorithms from the popular R packages such as `bnlean` and `pcalg`. [[GitHub](https://github.com/Diviyan-Kalainathan/CausalDiscoveryToolbox)]
+2. **CGNN**: This is not exactly a package, but its code to reproduce the results from the [paper](https://arxiv.org/abs/1709.05321) "Learning Functional Causal Models with Generative Neural Networks" [[GitHub](https://github.com/GoudetOlivier/CGNN)]
 
 ## R
 
@@ -50,4 +51,4 @@ More code for causal discovery and inference is listed [here](http://web.math.ku
 
 1. **Tetrad**: Tetrad is a program which creates, simulates data from, estimates, tests, predicts with, and searches for causal and statistical models. [[Website](http://www.phil.cmu.edu/tetrad/about.html)]
 
-(Updated 16th November, 2018)
+(Updated 1st March, 2019)
