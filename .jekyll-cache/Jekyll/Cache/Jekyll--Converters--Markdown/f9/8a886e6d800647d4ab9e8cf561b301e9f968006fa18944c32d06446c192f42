@@ -1,6 +1,0 @@
-I"w<p>My friends - Amit Gupta and Madhumathi K - and I, attempted the Expedia Hotel Recommendations challenge as part of the project for the Machine Learning course. Details about the competetion can be found <a href="https://www.kaggle.com/c/expedia-hotel-recommendations">here.</a></p>
-
-<p>The popular solution that was all over the forums was the method of counting the number of times a particular combination of attributes occured in the dataset. We arrived the exact same approach after experimenting with Bayesian Networks.</p>
-
-<p>I’m planning to write a blog post explaining our approach in detail. It’s coming soon!</p>
-:ET
