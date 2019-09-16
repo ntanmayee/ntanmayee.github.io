@@ -16,7 +16,7 @@ author: tanmayee
 description: List of tools and libraries available for causal discovery and inference.
 ---
 
-Here is a list of libraries, packages and tools for causal discovery and inference. Please let me know if I've missed out on something!
+Here is a list of libraries, packages and tools for causal discovery and inference.<!--more--> Please let me know if I've missed out on something! 
 
 ## Python
 

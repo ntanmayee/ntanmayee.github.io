@@ -1,0 +1,47 @@
+I"r<p>Here is a list of libraries, packages and tools for causal discovery and inference. Please let me know if I’ve missed out on something! <!--more--></p>
+
+<h2 id="python">Python</h2>
+
+<h3 id="inference">Inference</h3>
+
+<ol>
+  <li><strong>DoWhy</strong>: DoWhy is based on a unified language for causal inference, combining causal graphical models and potential outcomes frameworks. [<a href="https://github.com/Microsoft/dowhy">GitHub</a>]</li>
+  <li><strong>CausalInference</strong>: Causalinference is a software package that implements various statistical and econometric methods used in the field variously known as Causal Inference, Program Evaluation, or Treatment Effect Analysis. [<a href="https://github.com/laurencium/causalinference">GitHub</a>] [<a href="https://pypi.org/project/CausalInference/">PyPi</a>]</li>
+  <li><strong>CausalImpact</strong>: This is the Python version of Google’s <a href="https://github.com/google/CausalImpact">Causal Impact model</a>. The main goal of the algorithm is to infer the expected effect a given intervention (or any action) had on some response variable by analyzing differences between expected and observed time series data. [<a href="https://github.com/dafiti/causalimpact">GitHub</a>]</li>
+</ol>
+
+<h3 id="discovery">Discovery</h3>
+
+<ol>
+  <li><strong>CausalDiscoveryToolbox</strong>: This is a package for causal discovery, and includes algorithms from the popular R packages such as <code class="highlighter-rouge">bnlean</code> and <code class="highlighter-rouge">pcalg</code>. [<a href="https://github.com/Diviyan-Kalainathan/CausalDiscoveryToolbox">GitHub</a>]</li>
+  <li><strong>CGNN</strong>: This is not exactly a package, but its code to reproduce the results from the <a href="https://arxiv.org/abs/1709.05321">paper</a> “Learning Functional Causal Models with Generative Neural Networks” [<a href="https://github.com/GoudetOlivier/CGNN">GitHub</a>]</li>
+</ol>
+
+<h2 id="r">R</h2>
+
+<h3 id="inference-1">Inference</h3>
+
+<ol>
+  <li><strong>CausalImpact</strong>: This R package implements an approach to estimating the causal effect of a designed intervention on a time series. [<a href="https://github.com/google/CausalImpact">GitHub</a>]</li>
+  <li><strong>tmle</strong>: This package implements targeted maximum likelihood estimation of point treatment effects. [<a href="https://cran.r-project.org/web/packages/tmle/index.html">CRAN</a>]</li>
+  <li><strong>InvariantCausalPrediction</strong>: This R package implements an approach for estimating confidence intervals for causal effects, using data collected in different experimental or environmental conditions. [<a href="https://cran.r-project.org/web/packages/InvariantCausalPrediction/index.html">CRAN</a>]</li>
+  <li><strong>pcalg</strong>: This package provides functions for causal structure learning and causal inference using graphical models. Algorithms implemented are - the IDA algorithm, the Generalized Backdoor Criterion (GBC), the Generalized Adjustment Criterion (GAC) and some related functions. [<a href="https://cran.r-project.org/web/packages/pcalg/index.html">CRAN</a>]</li>
+</ol>
+
+<h3 id="discovery-1">Discovery</h3>
+
+<ol>
+  <li><strong>pcalg</strong>: This package provides functions for causal structure learning and causal inference using graphical models. Algorithms implemented are PC, FCI, RFCI, GIES. [<a href="https://cran.r-project.org/web/packages/pcalg/index.html">CRAN</a>]</li>
+  <li><strong>CAM</strong>: This package fits a Causal Additive Model <a href="https://arxiv.org/abs/1310.1533">(CAM)</a> for estimating the causal structure of the underlying process. [<a href="https://cran.r-project.org/web/packages/CAM/index.html">CRAN</a>]</li>
+</ol>
+
+<p>More code for causal discovery and inference is listed <a href="http://web.math.ku.dk/~peters/code.html">here</a> and <a href="http://webdav.tuebingen.mpg.de/causality/">here</a>.</p>
+
+<h2 id="tools">Tools</h2>
+
+<ol>
+  <li><strong>Tetrad</strong>: Tetrad is a program which creates, simulates data from, estimates, tests, predicts with, and searches for causal and statistical models. [<a href="http://www.phil.cmu.edu/tetrad/about.html">Website</a>]</li>
+</ol>
+
+<p>(Updated 1st March, 2019)</p>
+:ET

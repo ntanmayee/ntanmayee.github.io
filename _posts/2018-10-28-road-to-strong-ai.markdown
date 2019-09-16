@@ -15,9 +15,7 @@ author: tanmayee
 description: What more do we need in order to reach a stage where Artificial Intelligence rivals human intelligence?
 ---
 
-*This post is a brief summary of Judea Pearl's paper "Theoretical Impediments to Machine Learning With Seven Sparks from the Causal Revolution" [[arxiv](https://arxiv.org/abs/1801.04016)]*
-
------
+> This post is a brief summary of Judea Pearl's paper "Theoretical Impediments to Machine Learning With Seven Sparks from the Causal Revolution" [[arxiv](https://arxiv.org/abs/1801.04016)] <!--more-->
 
 What more do we need in order to reach a stage where Artificial Intelligence rivals human intelligence?
 

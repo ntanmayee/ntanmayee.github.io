@@ -1,0 +1,9 @@
+I"*<p>In September 2015, CSTEP released a compendium of resources on Smart Cities. <!--more--> In their own words, “The purpose of this Compendium is to provide policy makers, academicians, industry and all other stakeholders interested in ‘Smart Cities’ a collection of different types of resources pertaining to smart cities.” The compendium may be found <a href="http://www.cstep.in/uploads/default/files/publications/stuff/320f73a9fd318538a3d258e8dfe180e4.pdf">here</a>.</p>
+
+<p>For the class on Smart Cities, we were required to find the similarities and differences between these definitions by different stakeholders. For each definition, the report provides a list of corresponding key-words. I counted the frequency of these key words and made a word cloud, where the size of each word is indicative of its frequency as a key word. Some words that are common are ‘ICT’, ‘sustainability’, ‘environment’ and ‘technology’.</p>
+
+<p><img src="https://raw.githubusercontent.com/triptoes1/triptoes1.github.io/master/assets/images/wordcloud_academic_clean.png" alt="wordcloud" /></p>
+<figcaption class="caption">Wordcloud of words used in definitions of smart cities</figcaption>
+
+<p>The code and other images can be found <a href="https://github.com/triptoes1/smart-cities-compendium">here.</a></p>
+:ET

@@ -1,0 +1,30 @@
+I"
+<p>In the ninth semester, we are required to work on a 12 credit project. My project is on building a python library for causal inference. I’m working on this with <a href="mailto:Chandan.Yeshwanth@iiitb.org">Chandan Yeshwanth</a>.</p>
+
+<p>Our first task was to find more about existing libraries. Here is a list of libraries that we found:</p>
+
+<ol>
+  <li>
+    <p><a href="https://cran.r-project.org/web/packages/pcalg/index.html">pcalg</a>: This R package supports both structure learning and inference. For structure learning, PC, FCI, RFCI and GIES algorithms are implemented. For causal inference, the IDA algorithm, the Generalized Backdoor Criterion (GBC) and the Generalized Adjustment Criterion (GAC) have been implemented.</p>
+  </li>
+  <li><a href="http://causalinferenceinpython.org/">CausalInference</a>: This python library sopports
+    <ul>
+      <li>Assessment of overlap in covariate distributions</li>
+      <li>Estimation of propensity score</li>
+      <li>Improvement of covariate balance through trimming</li>
+      <li>Subclassification on propensity score</li>
+      <li>Estimation of treatment effects via matching, blocking, weighting, and least squares</li>
+    </ul>
+  </li>
+  <li>
+    <p><a href="http://google.github.io/CausalImpact/CausalImpact.html">CausalImpact</a>: This R package estimates the causal effect of a designed intervention on a time series.</p>
+  </li>
+  <li><a href="https://cran.r-project.org/web/packages/SuperLearner/index.html">SuperLearner</a> and <a href="https://cran.r-project.org/web/packages/tmle/index.html">tmle</a>: These are R packages that implement targeted maximum likelihood estimation (TMLE).</li>
+</ol>
+
+<p>The main challenge in conducting any survey in the area of causal inference, is that there is a wide variation in the terminology and language used, depending on the author’s background. For example, my introduction was through Judea Pearl’s book <em>Causality</em>, where the it was all about Markov models and DAGs and graphs. However, other books on causal inference talk about the Granger causality test, propensity scores and treatment effects.</p>
+
+<p>Ultimately, we decided to implement CausalImpact in python. We chose this because, firstly, it seemed do-able in the time that we have. Secondly, since it is basically the R implementation of <a href="http://research.google.com/pubs/pub41854.html">this</a> paper, we didn’t have to spend too much time in finding resources to understand the theory.</p>
+
+<p>Our next steps are to understand the paper first, and then begin its implementation.</p>
+:ET

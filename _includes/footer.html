@@ -1,7 +1,13 @@
-<footer class="footer-main">
-    {{ site.name }} © {{ site.time | date: '%Y' }} <a class="link" href="{{ site.url }}/feed.xml" target="_blank"><svg class="icon icon-rss"><use xlink:href="#icon-rss"></use></svg></a>
+<footer>
+  <hr class="slender">
+<div class="credits">
+<span>&copy; {{ site.time | date: '%Y' }} 
+  {% if site.email == "" or site.email == nil %}
+	{{site.author }}</span></br> <br>    
+  {% else %}
+		<a href="mailto:{{ site.email }}">{{site.author}}</a></span></br> <br>    
+  {% endif %}  
 
-    <p class="extra">
-        <a class="link" href="https://github.com/sergiokopplin/indigo">Indigo theme</a> by <a class="link" href="http://koppl.in">Kopplin</a>
-    </p>
+<span>Created with <a href="//jekyllrb.com">Jekyll</a> and the theme <a href="//github.com/sdruskat/tufte-css-jekyll">tufte-css-jekyll</a>.</span> 
+</div>  
 </footer>

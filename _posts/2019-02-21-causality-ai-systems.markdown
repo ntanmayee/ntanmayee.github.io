@@ -14,7 +14,7 @@ blog: true
 author: tanmayee
 description: Can ideas from causality help us in understanding AI systems?
 ---
-*This article originally appeared on [LinkedIn pulse](https://www.linkedin.com/pulse/using-causality-understand-ai-systems-better-tanmayee-narendra/).*
+*This article originally appeared on [LinkedIn pulse](https://www.linkedin.com/pulse/using-causality-understand-ai-systems-better-tanmayee-narendra/).* <!--more-->
 
 Co-Authors: [Utkarsh Desai](https://www.linkedin.com/in/utkarsh-desai-b927336/), [Senthil Mani](https://www.linkedin.com/in/kmsenthil/) and [Anush Sankaran](https://www.linkedin.com/in/goodboyanush/)
 

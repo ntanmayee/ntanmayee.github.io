@@ -1,30 +1,23 @@
-{% if page.title == "Home"
-   or page.title == "Blog"
-   or page.title == "Projects"
-   or page.title == "Tags"
-%}{% assign showHeader = true %}{% endif %}
+<!--- Header and nav template site-wide -->
+<header>
+	<nav class="group">
+	{% assign pg = site.pages | sort: "weight" %}
+	{% for node in pg %}
+		{% unless node.nav_exclude or node.url contains ".css" %}
+				{% if page.url == node.url %}
+					<a class="active" href="{{node.url | prepend: site.baseurl}}" class="active">{{node.title}}</a>
+				{% else %}
+					<a href="{{node.url | prepend: site.baseurl}}">{{node.title}}</a>
+				{% endif %}
+			{% endunless %}
+		{% endfor %}
+	</nav>
 
-{% if page.use_math %}
-      {% include mathjax_support %}
-{% endif %}
-
-{% if showHeader == true %}
-    <header class="header-home {% if site.animation %}animated{% endif %}">
-        {% if site.about %}
-            <a class="link" href="{{ site.url }}/about">
-                <img class="selfie" alt="{{ site.name }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
-            </a>
-        {% else %}
-            <span class="link">
-                <img class="selfie" alt="{{ site.name }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
-            </span>
-        {% endif %}
-
-        <h1 class="title">{{ site.name }}</h1>
-        <h2 class="description">{{ site.bio }}</h2>
-
-        {% include social-links.html %}
-    </header>
-{% endif %}
-
-{% include nav.html %}
+	{% if site.header == true %}
+		<h1 class="header-title"><a href="{{site.baseurl}}/">{{ site.title }}</a></h1>
+		{% if site.subtitle == "" or site.subtitle == nil %}
+		{% else %}
+			<h2 class="header-subtitle">{{ site.subtitle }}</h2>
+		{% endif %}
+	{% endif %}
+</header>

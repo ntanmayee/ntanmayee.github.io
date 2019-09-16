@@ -2,7 +2,7 @@
 title: "Personalised Hotel Recommendations"
 layout: post
 date: 2016-06-23 22:10
-tag: 
+tag:
 - expedia
 - recommendation system
 - bayesian networks
@@ -17,8 +17,8 @@ jemoji: '<img class="emoji" title=":ramen:" alt=":ramen:" src="https://assets.gi
 author: tanmayee
 ---
 
-My friends - Amit Gupta and Madhumathi K - and I, attempted the Expedia Hotel Recommendations challenge as part of the project for the Machine Learning course. Details about the competetion can be found [here.](https://www.kaggle.com/c/expedia-hotel-recommendations)
+My friends - Amit Gupta and Madhumathi K - and I, attempted the Expedia Hotel Recommendations challenge as part of the project for the Machine Learning course. Details about the competetion can be found [here.](https://www.kaggle.com/c/expedia-hotel-recommendations) <!--more-->
 
-The popular solution that was all over the forums was the method of counting the number of times a particular combination of attributes occured in the dataset. We arrived the exact same approach after experimenting with Bayesian Networks. 
+The popular solution that was all over the forums was the method of counting the number of times a particular combination of attributes occured in the dataset. We arrived the exact same approach after experimenting with Bayesian Networks.
 
-I'm planning to write a blog post explaining our approach in detail. It's coming soon! 
+I'm planning to write a blog post explaining our approach in detail. It's coming soon!

@@ -4,7 +4,7 @@ layout: post
 date: 2015-10-24 22:48
 image: /assets/images/markdown.jpg
 headerImage: false
-tag: 
+tag:
 - air temperature
 - politics
 - gender
@@ -12,9 +12,9 @@ blog: true
 author: tanmayee
 description: Indoor Air Temperature Control in Office Spaces
 ---
-*"Can someone increase the temperature of the AC? It's too cold!*
+> "Can someone increase the temperature of the AC? It's too cold!"
 
-*"What?! I'm practically sweating here! Don't change the temperature.”*
+> "What?! I'm practically sweating here! Don't change the temperature.” <!--more-->
 
 I have this conversation practically every day. When I'm cold, someone else is inevitably feeling hot; when the temperature is just right for me, it isn't right for many others. The topic of thermal comfort and indoor air temperature control has been fiercely debated. Earlier this year, The New York Times published an article on how a male-biased algorithm was to blame for the heightened thermal discomfort that women face in office environments. It also included several anecdotes and stories of how working women coped with their discomfort by altering their behaviour - such as wearing more layers of clothing or using space heaters to warm up. (Belluck, 2015) The article was strongly debated by its readers, and there was a wide range of opinions. While some women vehemently agreed, some men responded that the standard office attire for a man inherently included more pieces of clothing than a woman's - leading to women feeling colder easily. There were several exceptions, however. One comment read - "I am a woman who loves air conditioning. Put a sweater on.” (Moore, 2015)
 
@@ -24,7 +24,7 @@ Alan Hedge, a professor of ergonomics at Cornell University, shares a similar vi
 
 He makes another interesting observation. In an office environment, the temperature is usually set by the CEO or the facility manager or the mechanical engineer who is responsible for maintaining the system. And they are typically men. (Greene, 2015) He also argues that people feel distracted by the cold, which leads to a decrease in productivity in the workplace. In a study of 19 employees performing computer work in an office, there was an association between air temperature and the correct keystroke rate - the correct keystroke rate was higher at warmer temperatures. (Hedge & Gaygen, 2011)
 
-So, are women the sole disadvantaged group when it comes to biased standards in indoor air temperature control? Thermal comfort is influenced by a variety of factors such muscle mass, hairiness of the skin and whether a person is lean or obese, among other factors. As Langdon Winner would say - 
+So, are women the sole disadvantaged group when it comes to biased standards in indoor air temperature control? Thermal comfort is influenced by a variety of factors such muscle mass, hairiness of the skin and whether a person is lean or obese, among other factors. As Langdon Winner would say -
 
 >"... the technological deck has been stacked in advance to favour certain social interests and that some people were bound to receive a better hand than others.” (Winner, 1980)
 
@@ -37,7 +37,7 @@ Air conditioners were designed with the primary intention of making people more 
 
 2. Greene, D. (2015, August 5). New Study Says Chilly Offices Hurt Women Workers' Productivity, Health. (National Public Radio) Retrieved October 17, 2015, from <http://www.npr.org/2015/08/05/429597180/new-study-says-chilly-offices-hurt-women-workers-productivity-health>
 
-3. Hedge, A., & Gaygen, D. (2011, February 22). Indoor Environment Conditions and Computer Work in an Office. HVAC&R Research, pp. 123-138. 
+3. Hedge, A., & Gaygen, D. (2011, February 22). Indoor Environment Conditions and Computer Work in an Office. HVAC&R Research, pp. 123-138.
 
 4. Klingma, B., & Lichtenbelt, W. v. (2015, August 3). Energy consumption in buildings and female thermal demand. Retrieved October 17, 2015, from Nature: Climate Change: <http://dx.doi.org/10.1038/nclimate2741>
 
