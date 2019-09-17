@@ -21,14 +21,15 @@ use_math: true
 If you are an NLP beginner (like me), then it is common to come across the terms *distributional similarity* and *distributed representation* in the context of word embeddings. <!--more-->It's easy to get confused between the two, or even assume that they mean the same thing. (They do sound very similar to each other.) Distributed representations are usually computed from distributional similarity, but on a conceptual level, they mean different things.
 
 ### Distributional Similarity
-> You shall know a word by the company it keeps. (J R Firth, 1957)
+{%epigraph 'You shall know a word by the company it keeps.' 'J R Firth, 1957' %}
 
 Distributional similarity is an important hypothesis in linguistics, and the main idea is surprisingly simple - the meaning of a word depends on the words that surround it (its context), and words which have similar contexts must be related to each other.
 
 For example, let's take the word *top*, and two sentences -
 
-* This purple top will go well with my white skirt.
-* We took two hours to reach the top of the hill.
+> This purple top will go well with my white skirt.
+
+> We took two hours to reach the top of the hill.
 
 Even though the same word *top* was used in both sentences, they convey different meanings because of the other words that surrounded them.
 
