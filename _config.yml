@@ -3,10 +3,10 @@ baseurl:
 title: Tanmayee Narendra
 # Whether the header (with large title and subtitle) should be displayed
 header: true
-subtitle: Doctoral Candidate at University of Tübingen
+subtitle: PhD Student at University of Tübingen
 author: Tanmayee Narendra
 email: ntanmayee [at] gmail [dot] com
-description: A Jekyll theme based on tufte-css
+description: PhD Student at University of Tübingen
 markdown: kramdown
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 highlighter: rouge
