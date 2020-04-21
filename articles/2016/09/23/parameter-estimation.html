@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Estimating Parameters in a Bayesian Network</title>
+  <meta name="description" content="In this article, I will describe how to find the maximum likelihood estimates for parameters of a Bayesian Network. Intutively, a Bayesian Network provides a...">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127309835-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127309835-1');
+  </script>
+
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+      }
+    });
+  </script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+  <link rel="stylesheet" type="text/css" href="/css/tufte.css">
+  <link rel="stylesheet" type="text/css" href="/css/latex.css">
+  <!-- <link rel="stylesheet" type="text/css" href="/css/print.css" media="print"> -->
+
+  <link rel="canonical" href="/articles/2016/09/23/parameter-estimation.html">
+
+  <link rel="alternate" type="application/rss+xml" title="Tanmayee Narendra" href="/feed.xml" />
+  <meta name="google-site-verification" content="HF7Ny1t4g_5j_isSGuyH1QjH64CHcrEuNPcPY3OM5UQ" />
+</head>
+
+  
+  <body>
+    <!--- Header and nav template site-wide -->
+<header>
+	
+	<nav class="group">
+	
+	
+		
+		
+		
+		
+		
+		
+		
+				
+					<a href="/">Tanmayee Narendra</a>
+				
+			
+		
+		
+				
+					<a href="/blog/">Blog</a>
+				
+			
+		
+		
+				
+					<a href="/page/publications">Publications</a>
+				
+			
+		
+	</nav>
+</header>
+
+    <article class="group">
+      <h1>Estimating Parameters in a Bayesian Network</h1>
+<p class="subtitle">September 23, 2016</p>
+
+<p>In this article, I will describe how to find the maximum likelihood estimates for parameters of a Bayesian Network. Intutively, a Bayesian Network provides a way to capture dependecies between different variables that we are interested in. <!--more--></p>
+
+<p>Consider some dataset $D$ which contains a set of variables $V=\{V_1,..,V_n\}$. Here, we assume that the variables are categorical - basically, it means that the set of possible values that the variable can take is finite. The joint probability distribution describes the way the values of the dataset is spread out. Storing the joint probability distribution explicitely is costly, but Bayesian Networks provide an efficient alternative.</p>
+
+<p>In a Bayesian Network, the joint distribution can be factored into a set of terms as follows</p>
+
+<script type="math/tex; mode=display">Pr(V) = \prod_{i=1}^nPr(V_i\mid \pi_i)</script>
+
+<p>where $\pi_i$ is a subset of $V$ called the parents of $V_i$. If we draw a graph such that there is an edge to $V_i$ from all variables in $\pi_i$, we obtain the graph assciated with the Bayesian Network. We make the additional assumption that this graph is a DAG.</p>
+
+<p>Let us take an example. Consider the DAG below.</p>
+
+<p><img src="https://raw.githubusercontent.com/triptoes1/triptoes1.github.io/master/assets/images/toy_dag1.png" alt="Toy Dag" title="Toy Dag" /></p>
+
+<p>The joint probability distribution can be factored as follows
+<script type="math/tex">Pr(A,B,C,D,E,F)=Pr(A).Pr(B).Pr(C \mid A,B).Pr(D \mid C).Pr(E \mid C).Pr(F \mid E)</script></p>
+
+<p>An important independence assumption in Bayesian Networks is that every node in the DAG is independent of its non-descendants, given its parents. In the previous example, given $C$, $E$ is independent of $A$ and $B$.</p>
+
+<p>This article mainly deals with the estimation of parameters for the Bayesian Network, so it assumes that the structure of the network (ie, the DAG between different nodes) is already known. Since we know that the joint probability distribution can already be factored into a set of conditional probability distributions, if we can somehow estimate these conditional distributions, then we are done.</p>
+
+<p>The method to find the maximum likelihood estimate for the parameters of the network is so simple, that it almost seems trivial. Consider the DAG given above. Suppose we want to find the conditional distribution $Pr(C \mid A,B)$. $C$ takes a value from ${x,y}$, $A$ takes a value from ${1,2}$ and $B$ is always $3$. We will need to construct the following table from our dataset -</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">C</th>
+      <th style="text-align: center">A</th>
+      <th style="text-align: center">B</th>
+      <th style="text-align: center"># of rows in $D$</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">x</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">3</td>
+      <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">x</td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">3</td>
+      <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">y</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">3</td>
+      <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">y</td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">3</td>
+      <td style="text-align: center">-</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>For every value that $C$ takes and for every possible combination of values for $\pi_i$ (the parents of $C$), we need to find how many times this combination occurs in the dataset. Basically, for every possible combination of values for $V_i$ and $\pi_i$ we want to count the number of rows in the dataset that contain this combination. More formally, the maximum likelihood estimate is given by</p>
+
+<script type="math/tex; mode=display">\theta_{ijk} = \frac {n_{ijk}} {n_{ij}}</script>
+
+<p>where ${n_{ijk}}$ is the number of times that variable $i$ takes the value $j$ with its parents having the $k^{th}$ configuration, and $n_{ij}$ is the number of times that variable $i$ takes the value $j$ in the dataset.</p>
+
+<p>If you notice, we haven’t included $n_{ij}$ in the table that we created. This is because $n_{ijk}$ constitutes the sufficient statistics for the distribution (or, the distribution is completely described by the quantity $n_{ijk}$).</p>
+
+<h3 id="expedia-hotel-recommendations-competetion-on-kaggle">Expedia Hotel Recommendations Competetion on Kaggle</h3>
+<p>In 2016, Kaggle hosted the <a href="https://www.kaggle.com/c/expedia-hotel-recommendations">Expedia Hotel Recommendations competetion.</a> Participants were required to contextualize customer data and predict the likelihood that a user would stay at 100 different hotel groups. Putting aside the data leak, the “counting solution” was quite popular in the discussion forums. While the solution evidently “worked” and gave reasonable results, no one seemed to be able to give a theoretical basis to what the underlying model and assumptions might have been.</p>
+
+<p>Here is one possible explanation as to why the solution worked. We constructed the following Bayesian Network based on our knowledge and understanding.
+<img src="https://raw.githubusercontent.com/triptoes1/triptoes1.github.io/master/assets/images/expedia_bn.png" alt="Expedia Bayesian Network" title="Kaggle Expedia" /></p>
+
+<p>For every record in the test file, we are given the values for all nodes except <tt><code class="highlighter-rouge">hotel_cluster</code></tt>. We used quantile binning to discretize continuous variables. The competetion requires that we output the top 5 most likely <tt><code class="highlighter-rouge">hotel_cluster</code></tt> values. So, all we did was calculate the maximum likelihood estimate for all possible <tt><code class="highlighter-rouge">hotel_cluster</code></tt> values and picked the top 5.</p>
+
+
+
+
+
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = '/articles/2016/09/23/parameter-estimation.html';
+      this.page.identifier = '/articles/2016/09/23/parameter-estimation.html';
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://triptoes1.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+    </article>
+    <span class="print-footer">Estimating Parameters in a Bayesian Network - September 23, 2016 - Tanmayee Narendra</span>
+    <footer>
+  <hr class="slender">
+<div class="credits">
+<span>&copy; 2020 
+  
+		<a href="mailto:ntanmayee [at] gmail [dot] com">Tanmayee Narendra</a></span></br> <br>    
+    
+
+<span>Created with <a href="//jekyllrb.com">Jekyll</a> and the theme <a href="//github.com/sdruskat/tufte-css-jekyll">tufte-css-jekyll</a>.</span> 
+</div>  
+</footer>
+  </body>
+</html>

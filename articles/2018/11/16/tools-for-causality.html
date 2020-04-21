@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Tools and Libraries for Causality</title>
+  <meta name="description" content="Here is a list of libraries, packages and tools for causal discovery and inference.">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127309835-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127309835-1');
+  </script>
+
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+      }
+    });
+  </script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+  <link rel="stylesheet" type="text/css" href="/css/tufte.css">
+  <link rel="stylesheet" type="text/css" href="/css/latex.css">
+  <!-- <link rel="stylesheet" type="text/css" href="/css/print.css" media="print"> -->
+
+  <link rel="canonical" href="/articles/2018/11/16/tools-for-causality.html">
+
+  <link rel="alternate" type="application/rss+xml" title="Tanmayee Narendra" href="/feed.xml" />
+  <meta name="google-site-verification" content="HF7Ny1t4g_5j_isSGuyH1QjH64CHcrEuNPcPY3OM5UQ" />
+</head>
+
+  
+  <body>
+    <!--- Header and nav template site-wide -->
+<header>
+	
+	<nav class="group">
+	
+	
+		
+		
+		
+		
+		
+		
+		
+				
+					<a href="/">Tanmayee Narendra</a>
+				
+			
+		
+		
+				
+					<a href="/blog/">Blog</a>
+				
+			
+		
+		
+				
+					<a href="/page/publications">Publications</a>
+				
+			
+		
+	</nav>
+</header>
+
+    <article class="group">
+      <h1>Tools and Libraries for Causality</h1>
+<p class="subtitle">November 16, 2018</p>
+
+<p>Here is a list of libraries, packages and tools for causal discovery and inference.<!--more--> Please let me know if I’ve missed out on something!</p>
+
+<h2 id="python">Python</h2>
+
+<h3 id="inference">Inference</h3>
+
+<ol>
+  <li><strong>DoWhy</strong>: DoWhy is based on a unified language for causal inference, combining causal graphical models and potential outcomes frameworks. [<a href="https://github.com/Microsoft/dowhy">GitHub</a>]</li>
+  <li><strong>CausalInference</strong>: Causalinference is a software package that implements various statistical and econometric methods used in the field variously known as Causal Inference, Program Evaluation, or Treatment Effect Analysis. [<a href="https://github.com/laurencium/causalinference">GitHub</a>] [<a href="https://pypi.org/project/CausalInference/">PyPi</a>]</li>
+  <li><strong>CausalImpact</strong>: This is the Python version of Google’s <a href="https://github.com/google/CausalImpact">Causal Impact model</a>. The main goal of the algorithm is to infer the expected effect a given intervention (or any action) had on some response variable by analyzing differences between expected and observed time series data. [<a href="https://github.com/dafiti/causalimpact">GitHub</a>]</li>
+</ol>
+
+<h3 id="discovery">Discovery</h3>
+
+<ol>
+  <li><strong>CausalDiscoveryToolbox</strong>: This is a package for causal discovery, and includes algorithms from the popular R packages such as <code class="highlighter-rouge">bnlean</code> and <code class="highlighter-rouge">pcalg</code>. [<a href="https://github.com/FenTechSolutions/CausalDiscoveryToolbox">GitHub</a>]</li>
+  <li><strong>CGNN</strong>: This is not exactly a package, but its code to reproduce the results from the <a href="https://arxiv.org/abs/1709.05321">paper</a> “Learning Functional Causal Models with Generative Neural Networks” [<a href="https://github.com/GoudetOlivier/CGNN">GitHub</a>]</li>
+  <li><strong>BETS</strong>: This is a package to use Granger causality to learn causal networks with time series data. Although this package is targeted towards gene expression datasets, the method itself is fairly generic, and should work in cases where the number of samples is much lesser than the number of random variables. [<a href="https://github.com/lujonathanh/BETS/">GitHub</a>]</li>
+  <li><strong>TiMINO</strong>: This is not a package, but the code to replicate the results from the <a href="https://papers.nips.cc/paper/5063-causal-inference-on-time-series-using-restricted-structural-equation-models.pdf">paper</a>. This is applicable for learning causal graphs from time series data. [<a href="http://people.tuebingen.mpg.de/jpeters/onlineCodeTimino.zip">Website</a>]</li>
+  <li><strong>LiNGAM</strong>: This is a package to learn non-Gaussian linear causal models. It includes functionality for different variations of the LiNGAM algorithm, such as ICA based LiNGAM, Direct LiNGAM, VARMA-LiNGAM and LiNGAM for multiple groups. [<a href="https://github.com/cdt15/lingam">GitHub</a>]</li>
+</ol>
+
+<h2 id="r">R</h2>
+
+<h3 id="inference-1">Inference</h3>
+
+<ol>
+  <li><strong>CausalImpact</strong>: This R package implements an approach to estimating the causal effect of a designed intervention on a time series. [<a href="https://github.com/google/CausalImpact">GitHub</a>]</li>
+  <li><strong>tmle</strong>: This package implements targeted maximum likelihood estimation of point treatment effects. [<a href="https://cran.r-project.org/web/packages/tmle/index.html">CRAN</a>]</li>
+  <li><strong>InvariantCausalPrediction</strong>: This R package implements an approach for estimating confidence intervals for causal effects, using data collected in different experimental or environmental conditions. [<a href="https://cran.r-project.org/web/packages/InvariantCausalPrediction/index.html">CRAN</a>]</li>
+  <li><strong>pcalg</strong>: This package provides functions for causal structure learning and causal inference using graphical models. Algorithms implemented are - the IDA algorithm, the Generalized Backdoor Criterion (GBC), the Generalized Adjustment Criterion (GAC) and some related functions. [<a href="https://cran.r-project.org/web/packages/pcalg/index.html">CRAN</a>]</li>
+</ol>
+
+<h3 id="discovery-1">Discovery</h3>
+
+<ol>
+  <li><strong>pcalg</strong>: This package provides functions for causal structure learning and causal inference using graphical models. Algorithms implemented are PC, FCI, RFCI, GIES. [<a href="https://cran.r-project.org/web/packages/pcalg/index.html">CRAN</a>]</li>
+  <li><strong>CAM</strong>: This package fits a Causal Additive Model <a href="https://arxiv.org/abs/1310.1533">(CAM)</a> for estimating the causal structure of the underlying process. [<a href="https://cran.r-project.org/web/packages/CAM/index.html">CRAN</a>]</li>
+  <li><strong>VAR-LiNGAM</strong>: This is the R code for Vector Autoregressive Linear Non-Gaussian Acyclic Model. [<a href="https://sites.google.com/site/dorisentner/publications/VARLiNGAM">Website</a>]</li>
+  <li><strong>Bayes-LiNGAM</strong>: This is a software package for learning directed acyclic graph structures from non-experimental (‘uncontrolled’) data. [<a href="https://www.cs.helsinki.fi/group/neuroinf/lingam/bayeslingam/">Website</a>]</li>
+</ol>
+
+<p>More code for causal discovery and inference is listed <a href="http://web.math.ku.dk/~peters/code.html">here</a> and <a href="http://webdav.tuebingen.mpg.de/causality/">here</a>.</p>
+
+<h2 id="tools">Tools</h2>
+
+<ol>
+  <li><strong>Tetrad</strong>: Tetrad is a program which creates, simulates data from, estimates, tests, predicts with, and searches for causal and statistical models. [<a href="http://www.phil.cmu.edu/tetrad/about.html">Website</a>]</li>
+</ol>
+
+<h2 id="other-useful-links">Other Useful Links</h2>
+<ol>
+  <li>Website for LiNGAM [<a href="https://sites.google.com/site/sshimizu06/lingam">Website</a>]</li>
+  <li>Website with code from papers on causality [<a href="http://web.math.ku.dk/~peters/code.html">Website</a>]</li>
+  <li>Elias Barenboim’s group is beta-testing a tool for doing causal inference from first principles. You can apply to beta test the tool <a href="https://bit.ly/36qUz4y">here</a>. [<a href="https://twitter.com/eliasbareinboim/status/1191609450462883841">Twitter</a>]</li>
+</ol>
+
+<p>(Updated 20th April, 2020)</p>
+
+
+
+
+
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = '/articles/2018/11/16/tools-for-causality.html';
+      this.page.identifier = '/articles/2018/11/16/tools-for-causality.html';
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://triptoes1.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+    </article>
+    <span class="print-footer">Tools and Libraries for Causality - November 16, 2018 - Tanmayee Narendra</span>
+    <footer>
+  <hr class="slender">
+<div class="credits">
+<span>&copy; 2020 
+  
+		<a href="mailto:ntanmayee [at] gmail [dot] com">Tanmayee Narendra</a></span></br> <br>    
+    
+
+<span>Created with <a href="//jekyllrb.com">Jekyll</a> and the theme <a href="//github.com/sdruskat/tufte-css-jekyll">tufte-css-jekyll</a>.</span> 
+</div>  
+</footer>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "latex.css",
+	"sources": [
+		"latex.scss"
+	],
+	"sourcesContent": [
+		"    .latex-sub, .latex-sup { text-transform: uppercase;\n                         font-size: smaller;\n                         position: relative; }\n\n    .latex-sub { top: 0.2rem;\n             margin-left: -0.1667rem;\n             margin-right: -0.125rem; }\n\n    .latex-sup { top: -0.2rem;\n             margin-left: -0.36rem;\n             margin-right: -0.15rem;\n             text-shadow: none; }\n\n    .latex::selection, .latex span:not(.latex-sup)::selection { text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe, 0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe, 0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe, -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;\n                    background: #b4d5fe; }\n\n    .latex::-moz-selection, .latex span:not(.latex-sup)::-moz-selection { text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe, 0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe, 0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe, -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;\n                         background: #b4d5fe; }\n"
+	],
+	"names": [],
+	"mappings": "AAAI,AAAA,UAAU,EAAE,UAAU,CAAC,EAAE,cAAc,EAAE,SAAS,EAC7B,SAAS,EAAE,OAAO,EAClB,QAAQ,EAAE,QAAQ,GAAG;;AAE1C,AAAA,UAAU,CAAC,EAAE,GAAG,EAAE,MAAM,EACf,WAAW,EAAE,UAAU,EACvB,YAAY,EAAE,SAAS,GAAG;;AAEnC,AAAA,UAAU,CAAC,EAAE,GAAG,EAAE,OAAO,EAChB,WAAW,EAAE,QAAQ,EACrB,YAAY,EAAE,QAAQ,EACtB,WAAW,EAAE,IAAI,GAAG;;AAE7B,AAAA,MAAM,AAAA,WAAW,EAAE,MAAM,CAAC,IAAI,AAAA,IAAK,CAAA,UAAU,CAAC,WAAW,CAAC,EAAE,WAAW,EAAE,4NAA4N,EACrR,UAAU,EAAE,OAAO,GAAG;;AAEtC,AAAA,MAAM,AAAA,gBAAgB,EAAE,MAAM,CAAC,IAAI,AAAA,IAAK,CAAA,UAAU,CAAC,gBAAgB,CAAC,EAAE,WAAW,EAAE,4NAA4N,EAC1R,UAAU,EAAE,OAAO,GAAG"
+}

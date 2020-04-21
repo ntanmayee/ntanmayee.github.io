@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Using Causality to Understand AI Systems Better</title>
+  <meta name="description" content="This article originally appeared on LinkedIn pulse.">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127309835-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127309835-1');
+  </script>
+
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+      }
+    });
+  </script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+  <link rel="stylesheet" type="text/css" href="/css/tufte.css">
+  <link rel="stylesheet" type="text/css" href="/css/latex.css">
+  <!-- <link rel="stylesheet" type="text/css" href="/css/print.css" media="print"> -->
+
+  <link rel="canonical" href="/articles/2019/02/21/causality-ai-systems.html">
+
+  <link rel="alternate" type="application/rss+xml" title="Tanmayee Narendra" href="/feed.xml" />
+  <meta name="google-site-verification" content="HF7Ny1t4g_5j_isSGuyH1QjH64CHcrEuNPcPY3OM5UQ" />
+</head>
+
+  
+  <body>
+    <!--- Header and nav template site-wide -->
+<header>
+	
+	<nav class="group">
+	
+	
+		
+		
+		
+		
+		
+		
+		
+				
+					<a href="/">Tanmayee Narendra</a>
+				
+			
+		
+		
+				
+					<a href="/blog/">Blog</a>
+				
+			
+		
+		
+				
+					<a href="/page/publications">Publications</a>
+				
+			
+		
+	</nav>
+</header>
+
+    <article class="group">
+      <h1>Using Causality to Understand AI Systems Better</h1>
+<p class="subtitle">February 21, 2019</p>
+
+<p><em>This article originally appeared on <a href="https://www.linkedin.com/pulse/using-causality-understand-ai-systems-better-tanmayee-narendra/">LinkedIn pulse</a>.</em> <!--more--></p>
+
+<p>Co-Authors: <a href="https://www.linkedin.com/in/utkarsh-desai-b927336/">Utkarsh Desai</a>, <a href="https://www.linkedin.com/in/kmsenthil/">Senthil Mani</a> and <a href="https://www.linkedin.com/in/goodboyanush/">Anush Sankaran</a></p>
+
+<h2 id="motivating-example">Motivating Example</h2>
+<p>Suppose you had a long day at work, and now you have a terrible headache. Hoping to feel better, you take an aspirin tablet and go to sleep. The next day, you wake up refreshed with no headache to bother you. Now, did the headache go away because of the aspirin? Would you still have the headache if you hadn’t taken the aspirin last night? There is no way to go back in time, recreate the same situation, and check whether you would still have a headache if you hadn’t taken the aspirin. How might we answer such questions?</p>
+
+<p>Let us consider another example. Those who design complex processes or systems constantly introspect whether any proposed change will lead to certain improvement in performance. A definitive way to test the benefit of the change is to implement the change, and conduct a randomized experiment and observe changes in performance. In most cases, this is expensive and time consuming, and this inherently limits the number of changes that can be tested practically.</p>
+
+<h2 id="causality-theory">Causality Theory</h2>
+<p>The theory of causality provides a principled method to codify assumptions, and use existing data to answer hypothetical “what-if” kinds of questions. In causality theory, questions/queries are organized into a three level hierarchy;</p>
+
+<ul>
+  <li>The easiest level involves questions about prediction (How many shoppers buy pencils and pens?)</li>
+  <li>The next level involves questions about interventions (How many shoppers would buy a pen if I doubled the price of a pencil?)</li>
+  <li>The hardest questions are counterfactuals (How much profit would I have made yesterday on pencils, if I had doubled the price of pens?)</li>
+</ul>
+
+<p>The expressive power of causal models is strictly greater than those of statistical models, as the latter is equipped to answer only prediction type of questions. [1]</p>
+
+<p>Typically, there are two steps to using a causal model.</p>
+
+<ol>
+  <li>Causal Discovery, the process of discovering causal relationships between variables. This step can also be thought of as a method of codifying assumptions about the system. Causal discovery is a hard problem on many levels - First, from a statistics standpoint, empirically discovering causal relationships between variables is an ill-posed problem. Second, the choice of variables depends on the granularity of analysis required, and is related to the nature of queries that are required to be answered by the causal model.</li>
+  <li>Causal Inference, where queries (predictions, interventions and counterfactuals) are answered using the causal model.
+A typical causal inference engine [2] consists of the following –</li>
+</ol>
+
+<p>The following would be required as inputs:</p>
+
+<ol>
+  <li>Query, which is the question that needs to be answered</li>
+  <li>Assumptions, which are usually codified by a directed graph</li>
+  <li>Data, for empirical estimation</li>
+</ol>
+
+<p>The engine would produce the following outputs:</p>
+
+<ol>
+  <li>Estimand, which is a recipe or formula to answer the query based on assumptions</li>
+  <li>Estimate, which is the answer to the query. This is computed from the estimand and the data</li>
+  <li>Fit indices, which give a measure of compatibility between the data and the assumptions</li>
+</ol>
+
+<p>There are several statistical techniques to compute the estimand, estimate and fit indices. [3]</p>
+
+<p>Suppose a designer wanted to quantify a system’s change in performance for a particular change. Causal models provide a principled methodology where assumptions can be codified, and performance changes can be estimated with data.</p>
+
+<h2 id="applications-of-causality">Applications of Causality</h2>
+<p>Historically, causal inference has been used in econometrics to estimate effects of policies, and in epidemiology[3], to estimate the effectiveness of drugs and other medical treatments. However, in the past few years, there have been several intriguing applications of causality to other non-traditional domains such as computational advertisement[4], exoplanet search[5], recommendation engines[6], fairness and bias[7], and in image understanding[8]. Mechanisms of causation are present in (arguably) every discipline, and causality as a theory has reached that level of maturity where it can be potentially applied to different domains. There is a lot of value in answering questions about interventions, and about hypothetical what-if questions, without conducting expensive experiments.</p>
+
+<h2 id="causality-and-ai-research">Causality and AI Research</h2>
+<p>In our research, we are exploring several problems where we think causality will provide an alternate (and hopefully useful) method of investigation. One particular avenue is trying to better understand deep learning models by using techniques from causality. Although deep learning models are being increasingly used in end-user facing applications, it is difficult to understand exactly how they work. Our goal is to study both data and model explainability through the lens of causal theory. This involves</p>
+
+<p>Causal Discovery in Deep Neural Networks: Developing a way to represent a deep neural network as a structural causal model, with the ability to answer interventional and counterfactual questions about input data and components of the network
+Causal Signals in Data: Devising methods to discover latent causal signals in data (images, audio and text) and develop a means to abstract out knowledge/rules about the data generation process
+Novel Applications of Causality: Exploring applications of causality, leveraging the techniques developed above, to solve challenges in data and model explainability and testing.
+We are happy to hear your thoughts and views and are looking for active collaborations to pursue this research.</p>
+
+<h3 id="references">References</h3>
+<ol>
+  <li>Peters, J., Janzing, D., &amp; Schölkopf, B. (2017). Elements of causal inference: foundations and learning algorithms. MIT press.</li>
+  <li>Pearl, J. (2018). Theoretical impediments to machine learning with seven sparks from the causal revolution. arXiv preprint arXiv:1801.04016.</li>
+  <li>Petersen, M. L., &amp; van der Laan, M. J. (2014). Causal models and learning from data: integrating causal modeling and statistical estimation. Epidemiology (Cambridge, Mass.), 25(3), 418-26.</li>
+  <li>Bottou, L., Peters, J., Quiñonero-Candela, J., Charles, D. X., Chickering, D. M., Portugaly, E., … &amp; Snelson, E. (2013). Counterfactual reasoning and learning systems: The example of computational advertising. The Journal of Machine Learning Research, 14(1), 3207-3260.</li>
+  <li>Schölkopf, B., Hogg, D., Wang, D., Foreman-Mackey, D., Janzing, D., Simon-Gabriel, C. J., &amp; Peters, J. (2015, June). Removing systematic errors for exoplanet search via latent causes. In International Conference on Machine Learning (pp. 2218-2226).</li>
+  <li>Wang, Y., Liang, D., Charlin, L., &amp; Blei, D. M. (2018). The Deconfounded Recommender: A Causal Inference Approach to Recommendation. arXiv preprint arXiv:1808.06581.</li>
+  <li>Kusner, M. J., Loftus, J., Russell, C., &amp; Silva, R. (2017). Counterfactual fairness. In Advances in Neural Information Processing Systems (pp. 4066-4076).</li>
+  <li>Lopez-Paz, D., Nishihara, R., Chintala, S., Scholkopf, B., &amp; Bottou, L. (2017). Discovering causal signals in images. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (pp. 6979-6987).</li>
+</ol>
+
+
+
+
+
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = '/articles/2019/02/21/causality-ai-systems.html';
+      this.page.identifier = '/articles/2019/02/21/causality-ai-systems.html';
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://triptoes1.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+    </article>
+    <span class="print-footer">Using Causality to Understand AI Systems Better - February 21, 2019 - Tanmayee Narendra</span>
+    <footer>
+  <hr class="slender">
+<div class="credits">
+<span>&copy; 2020 
+  
+		<a href="mailto:ntanmayee [at] gmail [dot] com">Tanmayee Narendra</a></span></br> <br>    
+    
+
+<span>Created with <a href="//jekyllrb.com">Jekyll</a> and the theme <a href="//github.com/sdruskat/tufte-css-jekyll">tufte-css-jekyll</a>.</span> 
+</div>  
+</footer>
+  </body>
+</html>
