@@ -9,7 +9,7 @@ Before this, I worked for two years as a Research Software Engineer at IBM Resea
 
 I am also one of the co-founders of Women In STEM Research (WISR), India. At WISR, our vision is to break barriers to STEM research for Indian women and gender minorities through community and collaboration. You can know more about WISR [here](https://twitter.com/wisrindia).
 
-In my free time, I enjoy singing. I have some covers on [YouTube](https://www.youtube.com/watch?v=A1n0NKEndfs&list=PLqcR77bpV0rQlXiWEpXeDXIgAzivEEm11) and recordings on [Smule](https://www.smule.com/triptoes). I'm also a nature lover and I love trekking. My last major trek was Buran Ghati, a high altitude pass in Himachal Pradesh, India (It goes up to 15,000 feet!).
+In my free time, I enjoy singing. I'm also a nature lover and I love trekking. 
 
 ## Contact
 You can find me on [Twitter](https://twitter.com/tanmayee_n), [LinkedIn](https://www.linkedin.com/in/tanmayeenarendra/), [Github](http://github.com/ntanmayee) and [Google Scholar](https://scholar.google.com/citations?user=1j8wLtMAAAAJ&hl=en).
