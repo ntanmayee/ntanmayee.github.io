@@ -3,6 +3,8 @@ layout: page
 title: Publications
 weight: 3
 ---
+{% sidenote 'paper' '[paper](https://www.nature.com/articles/s41467-023-40211-2)' %} Hawkins-Hooker, A., Visonà, G., Narendra, T., Rojas-Carulla, M., Schölkopf, B. and Schweikert, G., 2023. *Getting personal with epigenetics: towards individual-specific epigenomic imputation with machine learning*. Nature Communications, 14(1), p.4750.
+
 {% sidenote 'paper' '[preprint](https://www.biorxiv.org/content/10.1101/2022.10.18.512665v1)' %} Narendra, T., Visonà, G., Cardona, C. D. J., & Schweikert, G. (2022). *Multi-histone ChIP-Seq Analysis with DecoDen. bioRxiv, 2022-10*.
 
 {% sidenote 'paper' '[preprint](https://www.biorxiv.org/content/10.1101/2022.02.11.479115v1)' %} Hawkins-Hooker, A., Visonà, G., Narendra, T., Rojas-Carulla, M., Schölkopf, B., & Schweikert, G. (2022). *Getting Personal with Epigenetics: Towards Machine-Learning-Assisted Precision Epigenomics*. bioRxiv, 2022-02.
