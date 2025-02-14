@@ -11,7 +11,7 @@ blog: true
 author: tanmayee
 description:
 ---
-Here is a list of resources about probability, statistics, machine learning, etc. This list is not complete and is biased{%sidenote 'bias' My main interest is in causality, which implies that I am interested in Bayesian networks and other Bayesian methods by extension. I am also interested in deep learning, but I am not an expert by any means.%} by what I am interested in. I would highly suggest you to have a look at a few pages of these books and pick up whatever looks most appealing to you. Most of them are freely available online. If not, it should be possible to preview them on Google Books or Amazon.
+Here is a list of resources about probability, statistics, machine learning, etc. <!--more--> This list is not complete and is biased{%sidenote 'bias' My main interest is in causality, which implies that I am interested in Bayesian networks and other Bayesian methods by extension. I am also interested in deep learning, but I am not an expert by any means.%} by what I am interested in. I would highly suggest you to have a look at a few pages of these books and pick up whatever looks most appealing to you. Most of them are freely available online. If not, it should be possible to preview them on Google Books or Amazon.
 
 ## Popular Science books
 I highly recommend **The Book of Why** by Judea Pearl. It’s about understanding cause and effect. Pearl won the Turing award (the highest honour in Computer Science) for Bayesian networks, so he knows what he’s talking about. It’s written for a general audience, so there are few equations, and lots of historical context, stories and anecdotes. 
