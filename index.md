@@ -12,3 +12,10 @@ Before starting my PhD, I worked for two years as a Research Software Engineer a
 In 2019, I co-founded [Women In STEM Research (WISR)](https://twitter.com/wisrindia), India. At WISR our vision is to break barriers to STEM research for Indian women and gender minorities through community{%sidenote 'community' "You're welcome to join our Slack community [here](https://join.slack.com/t/wisr-chat/shared_invite/zt-uxta1lti-cALZ_5Twr54PApGeUce8aw)." %} and collaboration.
 
 You can contact me by email at *X@Y* where *X=tnarendra001* and *Y=dundee.ac.uk*, or find me on [LinkedIn](https://www.linkedin.com/in/tanmayeenarendra/).
+
+## News
+My thesis defence is scheduled for the 25th June, 2025. Send me a message if you would like to attend virtually.
+
+SDCI is now accepted to ICML 2025! [Paper](https://arxiv.org/abs/2110.06257) here.
+
+A revised manuscript for DecoDen is now on Biorxiv. [Preprint](https://www.biorxiv.org/content/10.1101/2025.03.04.641154v1) here.
