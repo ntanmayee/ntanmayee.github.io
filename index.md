@@ -3,7 +3,7 @@ layout: full-width
 title: Tanmayee Narendra
 weight: 1
 ---
-{% newthought "Hello! I'm Tanmayee Narendra"%}{% marginfigure 'me' 'assets/images/profile_bw.jpg' 'This is me.' %}, a PhD Candidate in Gabriele Schweikert's group. I used to be at the University of Tübingen (Germany), now I'm at the University of Dundee (UK). 
+{% newthought "Hello! I'm Tanmayee Narendra"%}{% marginfigure 'me' 'assets/images/profile_bw.jpg' 'This is me.' %}. I recently defended my PhD at the University of Tübingen (Germany) in the IMPRS-IS program under the supervision of Gabriele Schweikert. I'm now a Postdoc at the University of Dundee (UK). 
 
 I am mainly interested in using computational methods to understand the interplay of epigenomics and gene regulation. Recently, I developed [DecoDen](https://www.biorxiv.org/content/10.1101/2022.10.18.512665v1) to separate signal from noise for multi-assay ChiP-Seq. The idea from DecoDen arose while working on tissue-specific [imputation of epigenomic signals](https://www.nature.com/articles/s41467-023-40211-2). 
 
