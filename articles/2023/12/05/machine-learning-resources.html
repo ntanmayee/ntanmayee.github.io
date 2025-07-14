@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/82b74c931a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+  <title>An Incomplete List of Resources for Machine Learning</title>
+  <meta name="description" content="Here is a list of resources about probability, statistics, machine learning, etc.">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127309835-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127309835-1');
+  </script>
+
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+      }
+    });
+  </script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+  <link rel="stylesheet" type="text/css" href="/css/tufte.css">
+  <link rel="stylesheet" type="text/css" href="/css/latex.css">
+  <!-- <link rel="stylesheet" type="text/css" href="/css/print.css" media="print"> -->
+
+  <link rel="canonical" href="/articles/2023/12/05/machine-learning-resources.html">
+
+  <link rel="alternate" type="application/rss+xml" title="Tanmayee Narendra" href="/feed.xml" />
+  <meta name="google-site-verification" content="HF7Ny1t4g_5j_isSGuyH1QjH64CHcrEuNPcPY3OM5UQ" />
+</head>
+
+  
+  <body>
+    <!--- Header and nav template site-wide -->
+<header>
+	
+	<nav class="group">
+	
+	
+		
+		
+		
+		
+		
+		
+		
+				
+					<a href="/">Tanmayee Narendra</a>
+				
+			
+		
+		
+				
+					<a href="/page/publications">Publications</a>
+				
+			
+		
+		
+				
+					<a href="/blog/">Blog</a>
+				
+			
+		
+	</nav>
+</header>
+
+    <article class="group">
+      <h1>An Incomplete List of Resources for Machine Learning</h1>
+<p class="subtitle">December 5, 2023</p>
+
+<p>Here is a list of resources about probability, statistics, machine learning, etc. <!--more--> This list is not complete and is biased<label for="bias" class="margin-toggle sidenote-number"></label><input type="checkbox" id="bias" class="margin-toggle" /><span class="sidenote">My main interest is in causality, which implies that I am interested in Bayesian networks and other Bayesian methods by extension. I am also interested in deep learning, but I am not an expert by any means.</span> by what I am interested in. I would highly suggest you to have a look at a few pages of these books and pick up whatever looks most appealing to you. Most of them are freely available online. If not, it should be possible to preview them on Google Books or Amazon.</p>
+
+<h2 id="popular-science-books">Popular Science books</h2>
+<p>I highly recommend <strong>The Book of Why</strong> by Judea Pearl. It’s about understanding cause and effect. Pearl won the Turing award (the highest honour in Computer Science) for Bayesian networks, so he knows what he’s talking about. It’s written for a general audience, so there are few equations, and lots of historical context, stories and anecdotes.</p>
+
+<p>If you are interested in causal inference after reading this, I wrote a blogpost on how to get started on reading about causality.</p>
+
+<h2 id="textbooks">Textbooks</h2>
+<p>My favourite is <a href="https://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/">Advanced Data Analysis from an Elementary Point of View</a> by Cosma Shalizi. I absolutely love the language and the way it is written. There is enough math to qualify it as a textbook, but it is also liberally peppered with quotes such as -</p>
+
+<blockquote>
+  <p>Every time someone thoughtlessly uses regression for causal inference, an angel not only loses its wings, but is cast out of Heaven and falls in extremest agony into the everlasting fire.</p>
+</blockquote>
+
+<p>I think this is a good introductory book. It is entertaining to read and has many practical examples.</p>
+
+<p><a href="http://web4.cs.ucl.ac.uk/staff/D.Barber/textbook/020217.pdf">Bayesian Reasoning and Machine Learning</a> by David Barber is a great, comprehensive book for Bayesian statistics.</p>
+
+<p>A good introductory book to computational biology is <a href="https://bio.libretexts.org/Bookshelves/Computational_Biology/Book%3A_Computational_Biology_-_Genomes_Networks_and_Evolution_(Kellis_et_al.)">Genomes, Networks and Evolution</a> by Manolis Kellis.</p>
+
+<p>Some other classic/trendy textbooks are -</p>
+
+<p>Pattern recognition and machine learning by Christopher Bishop (also called The Bible, or The Bishop Book)</p>
+
+<p><a href="http://incompleteideas.net/book/the-book-2nd.html">Reinforcement learning: An introduction</a> by Sutton and Barto (also called Sutton and Barto, or The Reinforcement Learning book)</p>
+
+<p><a href="https://mml-book.github.io/">Mathematics for Machine Learning</a></p>
+
+<p><a href="https://www.deeplearningbook.org/">The Deep Learning Book</a></p>
+
+<p><a href="http://distill.pub/">Distill.pub</a> - this is not a book, but a collection of interactive articles on deep learning</p>
+
+<h2 id="lecture-series">Lecture Series</h2>
+<p>Jonas Peters’ 4 part <a href="https://stat.mit.edu/news/four-lectures-causality/">lecture on causality</a></p>
+
+<p>David Silver’s 4 part <a href="https://www.youtube.com/watch?v=2pWv7GOvuf0">lecture on reinforcement learning</a></p>
+
+<p>3Blue1Brown <a href="https://www.youtube.com/c/3blue1brown">YouTube channel</a> - this is just an awesome math channel in general</p>
+
+<h2 id="bonus">Bonus</h2>
+<p>How much math can you understand in this <a href="https://www.youtube.com/watch?v=B1J6Ou4q8vE">video</a>?</p>
+
+
+
+
+
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = '/articles/2023/12/05/machine-learning-resources.html';
+      this.page.identifier = '/articles/2023/12/05/machine-learning-resources.html';
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://triptoes1.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+    </article>
+    <span class="print-footer">An Incomplete List of Resources for Machine Learning - December 5, 2023 - Tanmayee Narendra</span>
+    <footer>
+  <hr class="slender">
+<div class="credits">
+<span>&copy; 2025 
+  
+		<a href="mailto:ntanmayee [at] gmail [dot] com">Tanmayee Narendra</a></span></br> <br>    
+    
+
+<span>Created with <a href="//jekyllrb.com">Jekyll</a> and the theme <a href="//github.com/sdruskat/tufte-css-jekyll">tufte-css-jekyll</a>.</span> 
+</div>  
+</footer>
+  </body>
+</html>
