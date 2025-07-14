@@ -14,7 +14,9 @@ In 2019, I co-founded [Women In STEM Research (WISR)](https://twitter.com/wisrin
 You can contact me by email at *X@Y* where *X=tnarendra001* and *Y=dundee.ac.uk*, or find me on [LinkedIn](https://www.linkedin.com/in/tanmayeenarendra/).
 
 ## News
-My thesis defence is scheduled for the 25th June, 2025. Send me a message if you would like to attend virtually.
+I will be at ISMB 2025, presenting at talk in the HITSeq COSI. 
+
+I successfully defended my PhD at the University of Tübingen (*magna cum laude*)!
 
 SDCI is now accepted to ICML 2025! [Paper](https://arxiv.org/abs/2110.06257) here.
 
