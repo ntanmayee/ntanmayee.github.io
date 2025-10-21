@@ -14,7 +14,7 @@ In 2019, I co-founded [Women In STEM Research (WISR)](https://twitter.com/wisrin
 You can contact me by email at *X@Y* where *X=tnarendra001* and *Y=dundee.ac.uk*, or find me on [LinkedIn](https://www.linkedin.com/in/tanmayeenarendra/).
 
 ## News
-I will be at ISMB 2025, presenting at talk in the HITSeq COSI. 
+I presented [DecoDen](https://www.biorxiv.org/content/10.1101/2025.03.04.641154v1) at ISMB 2025 in the HITSeq COSI. 
 
 I successfully defended my PhD at the University of Tübingen (*magna cum laude*)!
 

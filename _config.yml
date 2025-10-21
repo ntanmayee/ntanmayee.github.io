@@ -3,10 +3,10 @@ baseurl:
 title: Tanmayee Narendra
 # Whether the header (with large title and subtitle) should be displayed
 header: true
-subtitle: PhD Student in computational biology
+subtitle: Postdoc in computational biology
 author: Tanmayee Narendra
 email: ntanmayee [at] gmail [dot] com
-description: PhD candidate
+description: Postdoctoral researcher
 markdown: kramdown
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 highlighter: rouge
